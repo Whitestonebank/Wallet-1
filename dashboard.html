@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrustLite Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Welcome to TrustLite</h2>
+    <div id="walletInfo"></div>
+    <canvas id="priceChart" width="400" height="200"></canvas>
+    <div class="actions">
+      <h3>Send Crypto</h3>
+      <input type="email" id="to" placeholder="Recipient Email" />
+      <select id="currency">
+        <option>BTC</option><option>ETH</option><option>LTC</option><option>USDT</option><option>BNB</option>
+      </select>
+      <input type="number" id="amount" placeholder="Amount" />
+      <button onclick="sendFunds()">Send</button>
+    </div>
+    <h3>Transaction History</h3>
+    <ul id="history"></ul>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
